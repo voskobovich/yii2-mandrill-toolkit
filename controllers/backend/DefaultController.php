@@ -27,7 +27,7 @@ class DefaultController extends BackendController
         parent::init();
 
         /** @var Module $module */
-        $module = Yii::$app->module;
+        $module = Yii::$app->getModule('mandrill');
         if ($module->controllerLayout) {
             $this->layout = $module->controllerLayout;
         }
