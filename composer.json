@@ -1,0 +1,42 @@
+{
+  "name": "voskobovich/yii2-mandrill",
+  "description": "The toolkit of manage Mandrill templates in your project for Yii2",
+  "keywords": [
+    "mandrill",
+    "module",
+    "mail",
+    "yii2"
+  ],
+  "homepage": "https://github.com/voskobovich/yii2-mandrill",
+  "type": "yii2-module",
+  "license": "MIT",
+  "support": {
+    "issues": "https://github.com/voskobovich/yii2-mandrill/issues",
+    "source": "https://github.com/voskobovich/yii2-mandrill"
+  },
+  "authors": [
+    {
+      "name": "Vitaly Voskobovich",
+      "email": "vitaly@voskobovich.com",
+      "homepage": "http://voskobovich.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=5.4.0",
+    "yiisoft/yii2": "*",
+    "voskobovich/yii2-admin-toolkit": "*",
+    "voskobovich/yii2-advanced-grid": "*",
+    "vova07/yii2-imperavi-widget": "*",
+    "nickcv/yii2-mandrill": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "voskobovich\\mandrill\\": "",
+      "voskobovich\\mandrill\\components\\": "components",
+      "voskobovich\\mandrill\\controllers\\": "controllers",
+      "voskobovich\\mandrill\\migrations\\": "migrations",
+      "voskobovich\\mandrill\\models\\": "models"
+    }
+  }
+}
