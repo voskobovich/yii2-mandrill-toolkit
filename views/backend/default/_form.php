@@ -15,7 +15,7 @@ use yii\widgets\ActiveForm;
         <h3 class="box-title"><?= $formTitle ?></h3>
     </div><!-- /.box-header -->
 
-<?php $form = ActiveForm::begin(['id' => 'category-form']) ?>
+<?php $form = ActiveForm::begin(['id' => 'mandrill-template-form']) ?>
     <div class="nav-tabs-custom" role="tabpanel">
         <!-- Nav tabs -->
         <ul class="nav nav-tabs" role="tablist">
