@@ -39,12 +39,10 @@ class DefaultController extends BackendController
     public function actions()
     {
         $actions = parent::actions();
-
         $actions['grid-handler'] = [
             'class' => 'voskobovich\grid\advanced\actions\HandlerAction',
             'modelClass' => $this->modelClass,
         ];
-
         return $actions;
     }
 }
