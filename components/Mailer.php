@@ -18,6 +18,16 @@ class Mailer extends \nickcv\mandrill\Mailer
     private static $_defaultModel = false;
 
     /**
+     * @var bool
+     */
+    public $useMandrillTemplates = true;
+
+    /**
+     * @var string
+     */
+    public $templateLanguage = Mailer::LANGUAGE_HANDLEBARS;
+
+    /**
      * Объект данных из базы
      * @param $name string
      * @return MandrillTemplate|null
