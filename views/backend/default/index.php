@@ -24,9 +24,6 @@ $this->params['breadcrumbs'][] = $this->title;
         <?= GridView::widget([
             'dataProvider' => $dataProvider,
             'tableOptions' => ['class' => 'table table-striped'],
-            'pager' => [
-                'class' => 'justinvoelker\separatedpager\LinkPager',
-            ],
             'columns' => [
                 [
                     'attribute' => 'name',
@@ -38,11 +35,11 @@ $this->params['breadcrumbs'][] = $this->title;
                 'from_email',
                 'subject',
                 [
-                    'class' => 'yii\grid\ActionColumn',
+                    'class' => 'voskobovich\grid\advanced\columns\ActionColumn',
                     'template' => '{update} {delete}',
                     'options' => [
-                        'width' => '70px'
-                    ]
+                        'width' => '120px'
+                    ],
                 ],
             ],
         ]) ?>
