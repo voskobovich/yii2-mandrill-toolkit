@@ -2,7 +2,6 @@
 
 namespace voskobovich\mandrill\migrations;
 
-use voskobovich\base\db\pgsql\Schema;
 use yii\db\Migration;
 
 
@@ -23,20 +22,20 @@ class create_table_mandrill_template extends Migration
         }
 
         $this->createTable($this->_tableName, [
-            'id' => Schema::TYPE_PK,
-            'slug' => Schema::TYPE_STRING . ' NOT NULL',
-            'name' => Schema::TYPE_STRING . ' NOT NULL',
-            'template_slug' => Schema::TYPE_STRING . ' NULL',
-            'from_email' => Schema::TYPE_STRING,
-            'from_name' => Schema::TYPE_STRING,
-            'bcc_email' => Schema::TYPE_STRING,
-            'subject' => Schema::TYPE_STRING,
-            'background_color' => Schema::TYPE_STRING . '(7)',
-            'background_url' => Schema::TYPE_STRING,
-            'logo_url' => Schema::TYPE_STRING,
-            'header' => Schema::TYPE_TEXT,
-            'footer' => Schema::TYPE_TEXT,
-            'is_default' => Schema::TYPE_BOOLEAN,
+            'id' => $this->primaryKey(),
+            'slug' => $this->string()->notNull(),
+            'name' => $this->string()->notNull(),
+            'template_slug' => $this->string(),
+            'from_email' => $this->string(),
+            'from_name' => $this->string(),
+            'bcc_email' => $this->string(),
+            'subject' => $this->string(),
+            'background_color' => $this->string(7),
+            'background_url' => $this->string(),
+            'logo_url' => $this->string(),
+            'header' => $this->text(),
+            'footer' => $this->text(),
+            'is_default' => $this->boolean(),
         ], $tableOptions);
 
         $this->createIndex('mail_slug_idx', $this->_tableName, 'slug', true);
