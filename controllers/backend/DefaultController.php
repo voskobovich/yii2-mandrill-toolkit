@@ -20,6 +20,12 @@ class DefaultController extends BackendController
     public $modelClass = 'voskobovich\mandrill\models\MandrillTemplate';
 
     /**
+     * Класс модели
+     * @var string
+     */
+    public $modelSearchClass = 'voskobovich\mandrill\models\MandrillTemplateSearch';
+
+    /**
      * @inheritdoc
      */
     public function init()

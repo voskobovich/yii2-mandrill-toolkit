@@ -8,7 +8,7 @@ use yii\data\ActiveDataProvider;
 
 
 /**
- * This is the model class for table "{{%mail}}".
+ * This is the model class for table "{{%mod_mandrill_template}}".
  *
  * @property integer $id
  * @property string $slug
