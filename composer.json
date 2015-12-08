@@ -1,18 +1,18 @@
 {
-  "name": "voskobovich/yii2-mandrill",
+  "name": "voskobovich/yii2-mandrill-toolkit",
   "description": "The toolkit of manage Mandrill templates in your project for Yii2",
   "keywords": [
     "mandrill",
-    "module",
+    "toolkit",
     "mail",
     "yii2"
   ],
-  "homepage": "https://github.com/voskobovich/yii2-mandrill",
-  "type": "yii2-module",
+  "homepage": "https://github.com/voskobovich/yii2-mandrill-toolkit",
+  "type": "yii2-toolkit",
   "license": "MIT",
   "support": {
-    "issues": "https://github.com/voskobovich/yii2-mandrill/issues",
-    "source": "https://github.com/voskobovich/yii2-mandrill"
+    "issues": "https://github.com/voskobovich/yii2-mandrill-toolkit/issues",
+    "source": "https://github.com/voskobovich/yii2-mandrill-toolkit"
   },
   "authors": [
     {
@@ -34,7 +34,6 @@
     "psr-4": {
       "voskobovich\\mandrill\\": "",
       "voskobovich\\mandrill\\components\\": "components",
-      "voskobovich\\mandrill\\controllers\\": "controllers",
       "voskobovich\\mandrill\\migrations\\": "migrations",
       "voskobovich\\mandrill\\models\\": "models"
     }
