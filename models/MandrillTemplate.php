@@ -88,6 +88,16 @@ class MandrillTemplate extends ActiveRecord
     }
 
     /**
+     * @inheritdoc
+     */
+    public function attributeHints()
+    {
+        return [
+            'bcc_email' => Yii::t('mail', 'You can enter multiple emails separated by comma'),
+        ];
+    }
+
+    /**
      * Поиск моделей
      * @param $params
      * @return ActiveDataProvider
