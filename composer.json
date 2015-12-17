@@ -26,8 +26,6 @@
     "php": ">=5.4.0",
     "yiisoft/yii2": "*",
     "voskobovich/yii2-admin-toolkit": "*",
-    "voskobovich/yii2-advanced-grid": "*",
-    "vova07/yii2-imperavi-widget": "*",
     "nickcv/yii2-mandrill": "*"
   },
   "autoload": {
@@ -35,7 +33,8 @@
       "voskobovich\\mandrill\\": "",
       "voskobovich\\mandrill\\components\\": "components",
       "voskobovich\\mandrill\\migrations\\": "migrations",
-      "voskobovich\\mandrill\\models\\": "models"
+      "voskobovich\\mandrill\\models\\": "models",
+      "voskobovich\\mandrill\\forms\\": "forms"
     }
   }
 }

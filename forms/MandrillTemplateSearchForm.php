@@ -1,30 +1,20 @@
 <?php
 
-namespace voskobovich\mandrill\models;
+namespace voskobovich\mandrill\forms;
 
+use voskobovich\admin\forms\IndexFormAbstract;
+use voskobovich\mandrill\models\MandrillTemplate;
 use Yii;
 use yii\data\ActiveDataProvider;
 
 
 /**
- * This is the model class for table "{{%mod_mandrill_template}}".
- *
- * @property integer $id
- * @property string $slug
  * @property string $name
- * @property string $template_slug
  * @property string $from_email
  * @property string $from_name
- * @property string $bcc_email
  * @property string $subject
- * @property string $background_color
- * @property string $background_url
- * @property string $logo_url
- * @property string $header
- * @property string $footer
- * @property boolean $is_default
  */
-class MandrillTemplateSearch extends MandrillTemplate
+class MandrillTemplateSearchForm extends IndexFormAbstract
 {
     /**
      * @inheritdoc
@@ -42,7 +32,7 @@ class MandrillTemplateSearch extends MandrillTemplate
      */
     public function search($params)
     {
-        $query = static::find();
+        $query = MandrillTemplate::find();
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
