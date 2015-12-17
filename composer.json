@@ -33,8 +33,7 @@
       "voskobovich\\mandrill\\": "",
       "voskobovich\\mandrill\\components\\": "components",
       "voskobovich\\mandrill\\migrations\\": "migrations",
-      "voskobovich\\mandrill\\models\\": "models",
-      "voskobovich\\mandrill\\forms\\": "forms"
+      "voskobovich\\mandrill\\models\\": "models"
     }
   }
 }
