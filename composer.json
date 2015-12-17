@@ -25,7 +25,6 @@
   "require": {
     "php": ">=5.4.0",
     "yiisoft/yii2": "*",
-    "voskobovich/yii2-admin-toolkit": "*",
     "nickcv/yii2-mandrill": "*"
   },
   "autoload": {
