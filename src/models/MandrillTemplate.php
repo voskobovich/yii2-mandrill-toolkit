@@ -70,20 +70,32 @@ class MandrillTemplate extends ActiveRecord
     public function attributeLabels()
     {
         return [
-            'id' => Yii::t('mail', 'ID'),
-            'slug' => Yii::t('mail', 'Slug'),
-            'name' => Yii::t('mail', 'Name'),
-            'template_slug' => Yii::t('mail', 'Template Slug in Mandrill'),
-            'from_email' => Yii::t('mail', 'From Email'),
-            'from_name' => Yii::t('mail', 'From Name'),
-            'bcc_email' => Yii::t('mail', 'Bcc Email(s)'),
-            'subject' => Yii::t('mail', 'Subject'),
-            'background_color' => Yii::t('mail', 'Background Color'),
-            'background_url' => Yii::t('mail', 'Background Url'),
-            'logo_url' => Yii::t('mail', 'Logo Url'),
-            'header' => Yii::t('mail', 'Header'),
-            'footer' => Yii::t('mail', 'Footer'),
-            'is_default' => Yii::t('mail', 'Use as defaults')
+            'id' => Yii::t('vendor/voskobovich/yii2-mandrill-toolkit/models/mandrillTemplate', 'ID'),
+            'slug' => Yii::t('vendor/voskobovich/yii2-mandrill-toolkit/models/mandrillTemplate', 'Slug'),
+            'name' => Yii::t('vendor/voskobovich/yii2-mandrill-toolkit/models/mandrillTemplate', 'Name'),
+            'template_slug' => Yii::t(
+                'vendor/voskobovich/yii2-mandrill-toolkit/models/mandrillTemplate'
+                , 'Template Slug in Mandrill'
+            ),
+            'from_email' => Yii::t('vendor/voskobovich/yii2-mandrill-toolkit/models/mandrillTemplate', 'From Email'),
+            'from_name' => Yii::t('vendor/voskobovich/yii2-mandrill-toolkit/models/mandrillTemplate', 'From Name'),
+            'bcc_email' => Yii::t('vendor/voskobovich/yii2-mandrill-toolkit/models/mandrillTemplate', 'Bcc Email(s)'),
+            'subject' => Yii::t('vendor/voskobovich/yii2-mandrill-toolkit/models/mandrillTemplate', 'Subject'),
+            'background_color' => Yii::t(
+                'vendor/voskobovich/yii2-mandrill-toolkit/models/mandrillTemplate',
+                'Background Color'
+            ),
+            'background_url' => Yii::t(
+                'vendor/voskobovich/yii2-mandrill-toolkit/models/mandrillTemplate',
+                'Background Url'
+            ),
+            'logo_url' => Yii::t('vendor/voskobovich/yii2-mandrill-toolkit/models/mandrillTemplate', 'Logo Url'),
+            'header' => Yii::t('vendor/voskobovich/yii2-mandrill-toolkit/models/mandrillTemplate', 'Header'),
+            'footer' => Yii::t('vendor/voskobovich/yii2-mandrill-toolkit/models/mandrillTemplate', 'Footer'),
+            'is_default' => Yii::t(
+                'vendor/voskobovich/yii2-mandrill-toolkit/models/mandrillTemplate',
+                'Use as defaults'
+            )
         ];
     }
 
@@ -93,7 +105,10 @@ class MandrillTemplate extends ActiveRecord
     public function attributeHints()
     {
         return [
-            'bcc_email' => Yii::t('mail', 'You can enter multiple emails separated by comma'),
+            'bcc_email' => Yii::t(
+                'vendor/voskobovich/yii2-mandrill-toolkit/models/mandrillTemplate',
+                'You can enter multiple emails separated by comma'
+            ),
         ];
     }
 

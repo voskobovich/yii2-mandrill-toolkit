@@ -29,10 +29,9 @@
   },
   "autoload": {
     "psr-4": {
-      "voskobovich\\mandrill\\": "",
-      "voskobovich\\mandrill\\components\\": "components",
-      "voskobovich\\mandrill\\migrations\\": "migrations",
-      "voskobovich\\mandrill\\models\\": "models"
+      "voskobovich\\mandrill\\components\\": "src/components",
+      "voskobovich\\mandrill\\migrations\\": "src/migrations",
+      "voskobovich\\mandrill\\models\\": "src/models"
     }
   }
 }
