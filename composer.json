@@ -21,11 +21,10 @@
       "homepage": "http://voskobovich.com"
     }
   ],
-  "minimum-stability": "dev",
   "require": {
     "php": ">=5.4.0",
-    "yiisoft/yii2": "*",
-    "nickcv/yii2-mandrill": "*"
+    "yiisoft/yii2": "~2.0.0",
+    "nickcv/yii2-mandrill": "~1.6.1"
   },
   "autoload": {
     "psr-4": {
